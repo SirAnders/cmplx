@@ -11,23 +11,35 @@ enum complex_format {CARTESIAN,POLAR};
 
 class complex {
 private:
-	float real;
-	float imaginary;
-	float magnitude;
-	float phase;
+	double real;
+	double imaginary;
+	double magnitude;
+	double phase;
 public:
 
-	complex(float r, float i,complex_format type = CARTESIAN);
+	complex(double r, double i,complex_format type = CARTESIAN);
 
-	float re();
-	float im();
-	float mag();
-	float ph();
+	double re();
+	double im();
+	double mag();
+	double ph();
 
 };
 
 complex operator+(complex a, complex b);
 
+complex operator+(complex a, double b);
+
+complex operator+(complex a, int b);
+
+
+
 complex operator*(complex a, complex b);
+
+complex operator*(complex a, double b);
+
+complex operator*(complex a, int b);
+
+complex cpow(complex a, int b);
 
 #endif
