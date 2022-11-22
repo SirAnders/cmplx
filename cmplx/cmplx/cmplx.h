@@ -40,7 +40,7 @@ complex operator*(complex a, double b);
 
 complex operator*(complex a, int b);
 
-complex cpow(complex a, int b);
+complex cpow(complex a, double b);
 
 bool operator==(complex a, complex b);
 

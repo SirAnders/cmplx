@@ -45,9 +45,29 @@ double complex::im() {
 	return imaginary;
 }
 double complex::mag() {
+	auto &r = real;
+	auto &i = imaginary;
+	magnitude = sqrt(pow(r, 2) + pow(i, 2));
 	return magnitude;
 }	  
 double complex::ph() {
+	auto &i = imaginary;
+	auto &r = real;
+	if ((r > 0) && (i >= 0)) {
+		phase = atan(i / r);
+	}
+	else if ((r <= 0) && (i > 0)) {
+		phase = DEG_TO_RAD(90) + atan(-r / i);
+	}
+	else if ((r < 0) && (i <= 0)) {
+		phase = DEG_TO_RAD(180) + atan(i / r);
+	}
+	else if ((r >= 0) && (i < 0)) {
+		phase = DEG_TO_RAD(270) + atan(-r / i);
+	}
+	else {
+		phase = 0;
+	}
 	return phase;
 }
 
@@ -78,7 +98,7 @@ complex operator*(complex a, int b) {
 	return complex{ a.mag() * (double)b, a.ph(), POLAR };
 }
 
-complex cpow(complex a, int b) {
+complex cpow(complex a, double b) {
 	return complex{pow(a.mag(),b), b * a.ph(), POLAR};
 }
 
