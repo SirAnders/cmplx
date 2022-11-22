@@ -53,8 +53,6 @@ double complex::ph() {
 
 /*  O P E R A T O R S  */
 
-	/* ADD */
-
 complex operator+(complex a, complex b) {
 	return complex{ a.re() + b.re(), a.im() + b.im(), CARTESIAN };
 }
@@ -67,7 +65,6 @@ complex operator+(complex a, int b) {
 	return complex{ a.re() + (double)b, a.im(), CARTESIAN };
 }
 
-	/* PRODUCT */
 
 complex operator*(complex a, complex b) {
 	return complex{ a.mag() * b.mag(), a.ph() + b.ph(), POLAR };
@@ -83,6 +80,18 @@ complex operator*(complex a, int b) {
 
 complex cpow(complex a, int b) {
 	return complex{pow(a.mag(),b), b * a.ph(), POLAR};
+}
+
+
+/*  C O M P A R E  */
+
+bool operator==(complex a, complex b) {
+	if ((a.re() == b.re()) && (a.im() == b.im())) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 

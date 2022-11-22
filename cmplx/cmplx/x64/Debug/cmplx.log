@@ -1,8 +1,2 @@
 ﻿  cmplx.cpp
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(13,19): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(18,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(21,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(24,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(34,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Andrei Gheorghiu\source\repos\cmplx\cmplx\cmplx.cpp(35,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  cmplx.vcxproj -> C:\Users\Andrei Gheorghiu\source\repos\cmplx\x64\Debug\cmplx.lib
+  cmplx.vcxproj -> C:\Users\bitma\source\repos\cmplx\cmplx\x64\Debug\cmplx.lib

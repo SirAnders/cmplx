@@ -1,2 +1,3 @@
-﻿  cmplx.cpp
-  cmplx.vcxproj -> C:\Users\Andrei Gheorghiu\source\repos\cmplx\x64\Release\cmplx.lib
+﻿  pch.cpp
+  cmplx.cpp
+  cmplx.vcxproj -> C:\Users\bitma\source\repos\cmplx\cmplx\x64\Release\cmplx.lib

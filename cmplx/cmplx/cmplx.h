@@ -42,4 +42,7 @@ complex operator*(complex a, int b);
 
 complex cpow(complex a, int b);
 
+bool operator==(complex a, complex b);
+
+
 #endif
